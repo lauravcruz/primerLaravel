@@ -27,8 +27,8 @@
             <div class="collapse navbar-collapse justify-content-around" id="navbarID">
                 <div class="navbar-nav">
                     <a class="nav-link active text-white" aria-current="page" href="/">Home</a>
-                    <a class="nav-link active" aria-current="page" href="/nosotros">¿Quiénes somos?</a>
-                    <a class="nav-link active" aria-current="page" href="/proyecto/1">Proyecto</a>
+                    <a class="nav-link active" aria-current="page" href=" {{ url('nosotros') }}">¿Quiénes somos?</a>
+                    <a class="nav-link active" aria-current="page" href={{ route('proyecto') }}>Proyecto</a>
                 </div>
             </div>
         </div>

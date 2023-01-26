@@ -19,11 +19,8 @@ Route::get('/', function () {
 
 Route::get('/nosotros', function () {
     return view('nosotros');
-});
+})->name('nosotros');
 
-Route::get('/proyecto/{num}', function ($num = 1) {
+Route::get('/proyecto/{num?}', function ($num = 1) {
     return view('proyecto', ['num' => $num]);
-});
-
-
-
+})->name('proyecto');
